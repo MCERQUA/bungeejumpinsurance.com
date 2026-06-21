@@ -1,0 +1,37 @@
+# Bungee Jump Insurance
+
+> Bungee Jump Insurance (by Contractors Choice Agency) provides specialized commercial insurance for bungee jump operators and extreme sports venues in all 50 states. Coverage lines: general liability (participant injury, premises, completed operations), participant accident & medical payments insurance, commercial property for jump towers and mobile cranes, workers' compensation for jump masters and rigging crews, umbrella / excess liability for high-limit venue contracts, and equipment breakdown insurance for bungee systems (winches, braking mechanisms, control electronics). A-rated carriers. 15-minute quotes, 2-hour claims response. Licensed in all 50 states — NPN #8608479. Founded 2005. Contact: 844-967-5247, josh@contractorschoiceagency.com.
+
+## Core pages
+
+- /: Bungee jump insurance home — overview of all coverages, quote CTA, operator testimonials
+- /services: All coverage lines for bungee jump operators
+- /coverage: Coverage details and explanations
+- /about: About Contractors Choice Agency, credentials, 20+ years of specialty contractor insurance
+- /quote: Get a bungee jump operator quote — GL, accident insurance, property, workers comp, umbrella, equipment breakdown
+- /contact: Contact page with phone, email, address
+
+## Coverage pages
+
+- /services/general-liability: GL insurance for bungee jump operators
+- /services/accident-insurance: Participant accident & medical payments insurance
+- /services/commercial-property: Commercial property for bungee jump towers and mobile cranes
+- /services/workers-compensation: Workers' comp for jump masters and rigging crews
+- /services/umbrella: Umbrella / excess liability for venue contract compliance
+- /services/equipment-breakdown: Equipment breakdown insurance for bungee systems
+
+## Blog posts
+
+- /blog/bungee-jump-operator-liability-insurance: Why specialty GL matters for bungee jump operators
+- /blog/bungee-jump-accident-insurance-explained: Participant accident insurance — the coverage GL won't provide
+- /blog/equipment-breakdown-coverage-bungee-jump: Equipment breakdown coverage for bungee jump systems
+- /blog/workers-comp-bungee-jump-operators: Workers' comp for bungee jump operations
+- /blog/insurance-requirements-bungee-jump-venues: What fairs, festivals, and parks require from bungee operators
+
+## Contact
+
+Phone: 844-967-5247
+Email: josh@contractorschoiceagency.com
+Address: 12220 E Riggs Road, Suite #105, Chandler, AZ 85249
+Hours: Mon–Fri 8am–5pm MST
+NPN: 8608479

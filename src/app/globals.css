@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   BUNGEE JUMP INSURANCE — "High Voltage" Design System
+   Dark · kinetic · adrenaline · electric blue + neon green on jet black
+   ============================================================ */
+
+@layer base {
+  :root {
+    --bg-cream: #000000;
+    --bg-sand: #0d0d0d;
+    --bg-white: #111111;
+    --clay: #0066ff;
+    --clay-dark: #0052cc;
+    --sage: #39ff14;
+    --gold: #39ff14;
+    --espresso: #ffffff;
+    --cocoa: #e0e0e0;
+    --mocha: #a0a0a0;
+    --adobe: #222222;
+    --radius: 0.5rem;
+  }
+
+  * { border-color: var(--adobe); }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--bg-cream);
+    color: var(--cocoa);
+    font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), Impact, "Arial Narrow", sans-serif;
+    color: var(--espresso);
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  ::selection {
+    background: rgba(0, 102, 255, 0.3);
+    color: #ffffff;
+  }
+}
+
+@layer components {
+  .container-tight { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .container-wide { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded
+           bg-clay text-white font-heading font-bold text-base uppercase tracking-wide
+           shadow-warm hover:bg-clay-dark hover:shadow-warm-lg
+           hover:-translate-y-0.5 transition-all duration-200
+           focus:outline-none focus:ring-4 focus:ring-clay/40;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded
+           bg-transparent text-white font-heading font-bold text-base uppercase tracking-wide
+           border-2 border-clay hover:bg-clay/10 hover:border-sage
+           hover:-translate-y-0.5 transition-all duration-200
+           focus:outline-none focus:ring-4 focus:ring-clay/25;
+  }
+  .btn-sage {
+    @apply inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded
+           bg-sage text-black font-heading font-bold text-base uppercase tracking-wide
+           hover:bg-sage-dark hover:-translate-y-0.5 transition-all duration-200
+           focus:outline-none focus:ring-4 focus:ring-sage/40;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded
+           text-mocha font-medium text-sm uppercase tracking-wide
+           hover:bg-adobe hover:text-white transition-colors duration-200;
+  }
+
+  .card-warm {
+    @apply bg-[#111111] rounded border border-adobe shadow-card
+           hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300
+           hover:border-clay/40;
+  }
+  .card-arch {
+    @apply bg-[#111111] border border-adobe shadow-card rounded
+           relative overflow-hidden hover:shadow-card-hover
+           hover:-translate-y-1 transition-all duration-300
+           hover:border-clay/40;
+  }
+  .card-arch::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #0066ff, #39ff14);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .card-arch:hover::before { opacity: 1; }
+
+  .bg-sonoran { background-color: #000000; }
+  .bg-warm-radial {
+    background-color: #000000;
+    background-image: radial-gradient(circle at 30% 20%, rgba(0,102,255,0.12) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 70%, rgba(57,255,20,0.05) 0%, transparent 55%);
+  }
+  .horizon-band { @apply bg-[#0d0d0d] border-y border-adobe; }
+
+  .pill-clay {
+    @apply inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded
+           bg-clay/20 text-clay font-heading font-bold text-xs uppercase tracking-widest
+           border border-clay/30;
+  }
+  .pill-sage {
+    @apply inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded
+           bg-sage/15 text-sage font-heading font-bold text-xs uppercase tracking-widest
+           border border-sage/30;
+  }
+
+  .section-heading {
+    @apply text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white uppercase leading-none;
+  }
+  .section-subheading {
+    @apply text-lg sm:text-xl text-mocha font-body font-normal normal-case tracking-normal;
+  }
+
+  .prose-warm {
+    @apply max-w-none text-cocoa;
+  }
+  .prose-warm h1, .prose-warm h2, .prose-warm h3, .prose-warm h4 {
+    @apply font-heading uppercase text-white;
+  }
+  .prose-warm p, .prose-warm li { @apply text-cocoa; }
+  .prose-warm a { @apply text-clay; }
+  .prose-warm strong { @apply text-white; }
+
+  .neon-text {
+    color: #39ff14;
+    text-shadow: 0 0 10px rgba(57, 255, 20, 0.5), 0 0 20px rgba(57, 255, 20, 0.3);
+  }
+  .voltage-stripe {
+    background: linear-gradient(135deg, #0066ff 0%, #39ff14 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
