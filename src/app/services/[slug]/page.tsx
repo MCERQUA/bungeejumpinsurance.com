@@ -87,7 +87,7 @@ export default async function ServiceDetailPage({ params }: Props) {
             </FadeIn>
             <div className="grid lg:grid-cols-12 gap-10 items-center">
               <FadeIn className="lg:col-span-7">
-                <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-clay-gradient text-white mb-5 shadow-warm"><Icon className="h-7 w-7" strokeWidth={2.2} /></div>
+                <div className="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-clay-gradient text-cream mb-5 shadow-warm"><Icon className="h-7 w-7" strokeWidth={2.2} /></div>
                 <span className="pill-sage">Coverage line</span>
                 <h1 className="mt-4 font-heading font-extrabold text-espresso text-4xl md:text-5xl leading-[1.08] tracking-tight">
                   {service.title}{" "}
@@ -144,7 +144,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 const RIcon = ICONS[r.icon as keyof typeof ICONS] ?? ShieldCheck;
                 return (
                   <Link key={r.slug} href={`/services/${r.slug}`} className="group p-6 rounded-3xl bg-white border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
-                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-clay/10 text-clay group-hover:bg-clay group-hover:text-white transition-colors mb-3"><RIcon className="h-6 w-6" strokeWidth={2.2} /></div>
+                    <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-clay/10 text-clay group-hover:bg-clay group-hover:text-cream transition-colors mb-3"><RIcon className="h-6 w-6" strokeWidth={2.2} /></div>
                     <p className="font-heading font-bold text-espresso">{r.title}</p>
                     <span className="mt-2 inline-flex items-center gap-1 text-sm font-heading font-bold text-clay group-hover:gap-2 transition-all">View <ArrowRight className="h-4 w-4" /></span>
                   </Link>

@@ -79,7 +79,7 @@ export default function AboutPage() {
               {COPY.about.timeline.map((t, i) => (
                 <FadeIn key={t.title} delay={i * 0.08}>
                   <div className="flex flex-col md:flex-row gap-4 md:gap-8 p-6 rounded-3xl bg-white border border-adobe shadow-card">
-                    <div className="md:w-40 flex-shrink-0"><span className="inline-flex px-4 py-2 rounded-full bg-clay-gradient text-white font-heading font-extrabold">{t.year}</span></div>
+                    <div className="md:w-40 flex-shrink-0"><span className="inline-flex px-4 py-2 rounded-full bg-clay-gradient text-cream font-heading font-extrabold">{t.year}</span></div>
                     <div>
                       <h3 className="font-heading font-bold text-xl text-espresso">{t.title}</h3>
                       <p className="mt-1 text-mocha leading-relaxed">{t.desc}</p>

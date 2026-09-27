@@ -56,7 +56,7 @@ export function Hero() {
               <motion.div initial={prefersReduced ? {} : { opacity: 0, y: 20 }} animate={prefersReduced ? {} : { opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="absolute -bottom-6 -left-4 md:-left-8 bg-white rounded-2xl shadow-warm-lg border border-adobe p-5 max-w-[15rem]">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 h-11 w-11 rounded-xl bg-clay-gradient flex items-center justify-center">
-                    <ShieldCheck className="h-6 w-6 text-white" />
+                    <ShieldCheck className="h-6 w-6 text-cream" />
                   </div>
                   <div>
                     <p className="font-heading font-extrabold text-espresso text-2xl leading-none">{COPY.hero.statValue}</p>
@@ -65,9 +65,9 @@ export function Hero() {
                 </div>
               </motion.div>
 
-              <motion.div initial={prefersReduced ? {} : { opacity: 0, y: -10 }} animate={prefersReduced ? {} : { opacity: 1, y: 0 }} transition={{ delay: 0.75, duration: 0.6 }} className="absolute -top-4 -right-3 md:-right-6 bg-sage text-white rounded-2xl shadow-warm-lg px-4 py-3">
+              <motion.div initial={prefersReduced ? {} : { opacity: 0, y: -10 }} animate={prefersReduced ? {} : { opacity: 1, y: 0 }} transition={{ delay: 0.75, duration: 0.6 }} className="absolute -top-4 -right-3 md:-right-6 bg-sage text-cream rounded-2xl shadow-warm-lg px-4 py-3">
                 <p className="font-heading font-bold text-sm">NPN #{SITE.npn}</p>
-                <p className="text-[0.7rem] text-white/80 mt-0.5">Licensed all 50 states</p>
+                <p className="text-[0.7rem] text-cream/80 mt-0.5">Licensed all 50 states</p>
               </motion.div>
             </div>
           </motion.div>

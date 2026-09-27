@@ -28,8 +28,8 @@ export function ServicesGrid() {
             return (
               <FadeIn key={service.slug} delay={(i % 4) * 0.05}>
                 <Link href={`/services/${service.slug}`} className={`group relative block h-full p-6 rounded-3xl border transition-all duration-300 hover:-translate-y-1.5 ${isFeatured ? "bg-espresso text-cream border-espresso shadow-warm-lg" : "bg-white text-espresso border-adobe shadow-card hover:shadow-card-hover"}`}>
-                  {isFeatured && <span className="absolute -top-2.5 right-5 pill-gold !bg-gold !text-espresso !border-gold-dark">Essential coverage</span>}
-                  <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl mb-4 transition-colors ${isFeatured ? "bg-clay-gradient text-white" : "bg-clay/10 text-clay group-hover:bg-clay group-hover:text-white"}`}>
+                  {isFeatured && <span className="absolute -top-2.5 right-5 pill-gold !bg-gold !text-cream !border-gold-dark">Essential coverage</span>}
+                  <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl mb-4 transition-colors ${isFeatured ? "bg-clay-gradient text-cream" : "bg-clay/10 text-clay group-hover:bg-clay group-hover:text-cream"}`}>
                     <Icon className="h-6 w-6" strokeWidth={2.2} />
                   </div>
                   <h3 className={`font-heading font-bold text-lg leading-tight mb-1.5 ${isFeatured ? "text-cream" : "text-espresso"}`}>{service.title}</h3>

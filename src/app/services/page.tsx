@@ -57,8 +57,8 @@ export default function ServicesPage() {
                 return (
                   <FadeIn key={s.slug} delay={(i % 3) * 0.06}>
                     <Link href={`/services/${s.slug}`} className={`group relative block h-full p-7 rounded-3xl border transition-all duration-300 hover:-translate-y-1.5 ${featured ? "bg-espresso text-cream border-espresso shadow-warm-lg" : "bg-white text-espresso border-adobe shadow-card hover:shadow-card-hover"}`}>
-                      {featured && <span className="absolute -top-2.5 right-5 pill-gold !bg-gold !text-espresso !border-gold-dark">Essential coverage</span>}
-                      <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl mb-4 ${featured ? "bg-clay-gradient text-white" : "bg-clay/10 text-clay"}`}><Icon className="h-6 w-6" strokeWidth={2.2} /></div>
+                      {featured && <span className="absolute -top-2.5 right-5 pill-gold !bg-gold !text-cream !border-gold-dark">Essential coverage</span>}
+                      <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl mb-4 ${featured ? "bg-clay-gradient text-cream" : "bg-clay/10 text-clay"}`}><Icon className="h-6 w-6" strokeWidth={2.2} /></div>
                       <h2 className={`font-heading font-bold text-xl ${featured ? "text-cream" : "text-espresso"}`}>{s.title}</h2>
                       <p className={`mt-2 text-sm leading-relaxed ${featured ? "text-cream/80" : "text-mocha"}`}>{s.description}</p>
                       <span className={`mt-5 inline-flex items-center gap-1 text-sm font-heading font-bold group-hover:gap-2 transition-all ${featured ? "text-gold" : "text-clay"}`}>Explore coverage<ArrowRight className="h-4 w-4" /></span>

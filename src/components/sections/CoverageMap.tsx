@@ -41,7 +41,7 @@ export function CoverageMap() {
                   {LOCATIONS.map((l) => (
                     <Link key={l.slug} href={`/locations/${l.slug}`} className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-white/15 backdrop-blur text-cream text-sm font-heading font-semibold border border-white/20 hover:bg-white/25 transition-colors">{l.name}<ArrowRight className="h-3.5 w-3.5" /></Link>
                   ))}
-                  <Link href="/coverage" className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-clay text-white text-sm font-heading font-semibold hover:bg-clay-dark transition-colors">All areas<ArrowRight className="h-3.5 w-3.5" /></Link>
+                  <Link href="/coverage" className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-clay text-cream text-sm font-heading font-semibold hover:bg-clay-dark transition-colors">All areas<ArrowRight className="h-3.5 w-3.5" /></Link>
                 </div>
               </div>
             </div>

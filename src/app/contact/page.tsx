@@ -67,7 +67,7 @@ export default function ContactPage() {
               <div className="grid sm:grid-cols-1 gap-4 mb-8">
                 {contactCards.map((c) => (
                   <a key={c.label} href={c.href} className="group flex items-center gap-4 p-5 rounded-2xl bg-white border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all">
-                    <span className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-clay/10 text-clay group-hover:bg-clay group-hover:text-white transition-colors"><c.icon className="h-6 w-6" strokeWidth={2.2} /></span>
+                    <span className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-clay/10 text-clay group-hover:bg-clay group-hover:text-cream transition-colors"><c.icon className="h-6 w-6" strokeWidth={2.2} /></span>
                     <div>
                       <p className="text-xs font-heading font-bold uppercase tracking-wider text-mocha">{c.label}</p>
                       <p className="font-heading font-bold text-espresso">{c.value}</p>
@@ -106,7 +106,7 @@ export default function ContactPage() {
 
                   {error && <p className="text-red-600 text-sm font-medium">{error}</p>}
 
-                  <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-white font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
+                  <button type="submit" disabled={submitting} className="w-full flex items-center justify-center gap-2 px-8 py-4 bg-clay-gradient text-cream font-heading font-bold rounded-full shadow-warm hover:shadow-warm-lg hover:-translate-y-0.5 transition-all disabled:opacity-60 disabled:cursor-not-allowed">
                     {submitting ? "Sending…" : "Send message"}{!submitting && <ArrowRight className="h-5 w-5" />}
                   </button>
                 </form>
