@@ -16,7 +16,7 @@ export function Stats() {
             {STATS.map((s) => (
               <div key={s.label} className="text-center">
                 <p className="font-heading font-extrabold text-4xl md:text-5xl text-cream leading-none">
-                  <span className="bg-gradient-to-r from-gold via-gold-light to-clay-light bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-clay-700 via-clay-dark to-clay-700 bg-clip-text text-transparent">
                     <Counter target={s.value} prefix={s.prefix} suffix={s.suffix} />
                   </span>
                 </p>

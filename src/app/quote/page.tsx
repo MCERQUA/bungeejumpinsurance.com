@@ -79,8 +79,8 @@ export default function QuotePage() {
                 ))}
                 <FadeIn>
                   <div className="p-5 rounded-2xl bg-espresso text-cream text-center">
-                    <p className="text-xs font-heading font-bold uppercase tracking-wider text-gold mb-2">Prefer to call?</p>
-                    <a href={SITE.phoneHref} className="flex items-center justify-center gap-2 text-cream font-heading font-extrabold text-xl hover:text-gold-light transition-colors"><Phone className="h-5 w-5" />{SITE.phone}</a>
+                    <p className="text-xs font-heading font-bold uppercase tracking-wider text-clay-700 mb-2">Prefer to call?</p>
+                    <a href={SITE.phoneHref} className="flex items-center justify-center gap-2 text-cream font-heading font-extrabold text-xl hover:text-clay-700 transition-colors"><Phone className="h-5 w-5" />{SITE.phone}</a>
                     <p className="text-xs text-cream/60 mt-1">{SITE.hours}</p>
                   </div>
                 </FadeIn>

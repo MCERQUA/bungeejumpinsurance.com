@@ -34,7 +34,7 @@ export function ServicesGrid() {
                   </div>
                   <h3 className={`font-heading font-bold text-lg leading-tight mb-1.5 ${isFeatured ? "text-cream" : "text-espresso"}`}>{service.title}</h3>
                   <p className={`text-sm leading-relaxed ${isFeatured ? "text-cream/80" : "text-mocha"}`}>{service.description}</p>
-                  <span className={`mt-4 inline-flex items-center gap-1 text-sm font-heading font-bold transition-all group-hover:gap-2 ${isFeatured ? "text-gold" : "text-clay"}`}>Explore coverage<ArrowRight className="h-4 w-4" /></span>
+                  <span className={`mt-4 inline-flex items-center gap-1 text-sm font-heading font-bold transition-all group-hover:gap-2 ${isFeatured ? "text-clay-700" : "text-clay"}`}>Explore coverage<ArrowRight className="h-4 w-4" /></span>
                 </Link>
               </FadeIn>
             );

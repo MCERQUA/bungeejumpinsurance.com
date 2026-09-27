@@ -78,8 +78,8 @@ export default function ContactPage() {
               </div>
 
               <div className="rounded-2xl bg-espresso text-cream p-6">
-                <div className="flex items-start gap-3 mb-4"><MapPin className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" /><div><p className="font-heading font-bold text-cream">Office</p><p className="text-cream/75 text-sm">{SITE.address.street}<br />{SITE.address.city}, {SITE.address.state} {SITE.address.zip}</p></div></div>
-                <div className="flex items-start gap-3"><Clock className="h-5 w-5 text-gold flex-shrink-0 mt-0.5" /><div><p className="font-heading font-bold text-cream">Hours</p><p className="text-cream/75 text-sm">{SITE.hours}</p><p className="text-cream/55 text-xs mt-0.5">24/7 claims hotline</p></div></div>
+                <div className="flex items-start gap-3 mb-4"><MapPin className="h-5 w-5 text-clay-700 flex-shrink-0 mt-0.5" /><div><p className="font-heading font-bold text-cream">Office</p><p className="text-cream/75 text-sm">{SITE.address.street}<br />{SITE.address.city}, {SITE.address.state} {SITE.address.zip}</p></div></div>
+                <div className="flex items-start gap-3"><Clock className="h-5 w-5 text-clay-700 flex-shrink-0 mt-0.5" /><div><p className="font-heading font-bold text-cream">Hours</p><p className="text-cream/75 text-sm">{SITE.hours}</p><p className="text-cream/55 text-xs mt-0.5">24/7 claims hotline</p></div></div>
               </div>
             </FadeIn>
 

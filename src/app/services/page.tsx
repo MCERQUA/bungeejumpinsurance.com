@@ -61,7 +61,7 @@ export default function ServicesPage() {
                       <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl mb-4 ${featured ? "bg-clay-gradient text-cream" : "bg-clay/10 text-clay"}`}><Icon className="h-6 w-6" strokeWidth={2.2} /></div>
                       <h2 className={`font-heading font-bold text-xl ${featured ? "text-cream" : "text-espresso"}`}>{s.title}</h2>
                       <p className={`mt-2 text-sm leading-relaxed ${featured ? "text-cream/80" : "text-mocha"}`}>{s.description}</p>
-                      <span className={`mt-5 inline-flex items-center gap-1 text-sm font-heading font-bold group-hover:gap-2 transition-all ${featured ? "text-gold" : "text-clay"}`}>Explore coverage<ArrowRight className="h-4 w-4" /></span>
+                      <span className={`mt-5 inline-flex items-center gap-1 text-sm font-heading font-bold group-hover:gap-2 transition-all ${featured ? "text-clay-700" : "text-clay"}`}>Explore coverage<ArrowRight className="h-4 w-4" /></span>
                     </Link>
                   </FadeIn>
                 );

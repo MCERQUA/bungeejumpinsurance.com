@@ -120,8 +120,8 @@ export default async function ServiceDetailPage({ params }: Props) {
               </FadeIn>
               <FadeIn delay={0.08}>
                 <div className="rounded-3xl bg-espresso text-cream p-7 h-full">
-                  <div className="flex items-center gap-2.5 mb-5"><span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-gold"><Users className="h-5 w-5" strokeWidth={2.2} /></span><h2 className="font-heading font-bold text-xl text-cream">Who it's for</h2></div>
-                  <ul className="space-y-3">{detail.whoItsFor.map((c) => (<li key={c} className="flex items-start gap-2.5 text-cream/85 text-[0.95rem] leading-relaxed"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-gold flex-shrink-0" /><span>{c}</span></li>))}</ul>
+                  <div className="flex items-center gap-2.5 mb-5"><span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-clay/10 text-clay-700"><Users className="h-5 w-5" strokeWidth={2.2} /></span><h2 className="font-heading font-bold text-xl text-cream">Who it's for</h2></div>
+                  <ul className="space-y-3">{detail.whoItsFor.map((c) => (<li key={c} className="flex items-start gap-2.5 text-cream/85 text-[0.95rem] leading-relaxed"><span className="mt-2 h-1.5 w-1.5 rounded-full bg-clay-700 flex-shrink-0" /><span>{c}</span></li>))}</ul>
                 </div>
               </FadeIn>
               <FadeIn delay={0.16}>
