@@ -66,7 +66,7 @@ export default function ContactPage() {
             <FadeIn>
               <div className="grid sm:grid-cols-1 gap-4 mb-8">
                 {contactCards.map((c) => (
-                  <a key={c.label} href={c.href} className="group flex items-center gap-4 p-5 rounded-2xl bg-white border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all">
+                  <a key={c.label} href={c.href} className="group flex items-center gap-4 p-5 rounded-2xl bg-sand border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-0.5 transition-all">
                     <span className="flex-shrink-0 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-clay/10 text-clay group-hover:bg-clay group-hover:text-cream transition-colors"><c.icon className="h-6 w-6" strokeWidth={2.2} /></span>
                     <div>
                       <p className="text-xs font-heading font-bold uppercase tracking-wider text-mocha">{c.label}</p>
@@ -85,13 +85,13 @@ export default function ContactPage() {
 
             <FadeIn delay={0.1}>
               {submitted ? (
-                <div className="p-10 rounded-3xl bg-white border border-adobe shadow-card text-center">
+                <div className="p-10 rounded-3xl bg-sand border border-adobe shadow-card text-center">
                   <div className="w-16 h-16 rounded-full bg-sage/15 flex items-center justify-center mx-auto mb-4"><CheckCircle2 className="h-8 w-8 text-sage" /></div>
                   <h2 className="font-heading font-extrabold text-espresso text-2xl mb-3">Message sent</h2>
                   <p className="text-mocha">Thanks for reaching out — we'll get back to you within one business day.</p>
                 </div>
               ) : (
-                <form name="contact" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} className="rounded-3xl bg-white border border-adobe shadow-card p-7 md:p-9 space-y-5">
+                <form name="contact" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} className="rounded-3xl bg-sand border border-adobe shadow-card p-7 md:p-9 space-y-5">
                   <input type="hidden" name="form-name" value="contact" />
                   <input name="bot-field" type="hidden" value={formData["bot-field"]} onChange={handleChange} className="hidden" />
 

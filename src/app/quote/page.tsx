@@ -68,7 +68,7 @@ export default function QuotePage() {
               <div className="space-y-4">
                 {trustItems.map((item) => (
                   <FadeIn key={item.title}>
-                    <div className="flex gap-3 p-5 rounded-2xl bg-white border border-adobe shadow-card">
+                    <div className="flex gap-3 p-5 rounded-2xl bg-sand border border-adobe shadow-card">
                       <span className="flex-shrink-0 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-clay/10 text-clay"><item.icon className="h-5 w-5" strokeWidth={2.2} /></span>
                       <div>
                         <p className="font-heading font-bold text-espresso text-sm">{item.title}</p>
@@ -89,7 +89,7 @@ export default function QuotePage() {
               <div className="lg:col-span-2">
                 {submitted ? (
                   <FadeIn>
-                    <div className="p-10 md:p-12 rounded-3xl bg-white border border-adobe shadow-card text-center">
+                    <div className="p-10 md:p-12 rounded-3xl bg-sand border border-adobe shadow-card text-center">
                       <div className="w-16 h-16 rounded-full bg-sage/15 flex items-center justify-center mx-auto mb-4"><CheckCircle2 className="h-8 w-8 text-sage" /></div>
                       <h2 className="font-heading font-extrabold text-espresso text-2xl mb-3">Quote request received</h2>
                       <p className="text-mocha mb-2">Thank you! We'll review your operation and reach out within one business day with personalized quotes.</p>
@@ -99,7 +99,7 @@ export default function QuotePage() {
                   </FadeIn>
                 ) : (
                   <FadeIn>
-                    <form name="quote" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} className="rounded-3xl bg-white border border-adobe shadow-card p-7 md:p-9 space-y-5">
+                    <form name="quote" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit} className="rounded-3xl bg-sand border border-adobe shadow-card p-7 md:p-9 space-y-5">
                       <input type="hidden" name="form-name" value="quote" />
                       <input name="bot-field" type="hidden" value={formData["bot-field"]} onChange={handleChange} className="hidden" />
 

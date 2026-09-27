@@ -113,7 +113,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           <section className="bg-cream py-16 md:py-24">
             <div className="container-wide grid lg:grid-cols-3 gap-8 lg:gap-10">
               <FadeIn>
-                <div className="rounded-3xl bg-white border border-adobe shadow-card p-7 h-full">
+                <div className="rounded-3xl bg-sand border border-adobe shadow-card p-7 h-full">
                   <div className="flex items-center gap-2.5 mb-5"><span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-clay/10 text-clay"><ShieldCheck className="h-5 w-5" strokeWidth={2.2} /></span><h2 className="font-heading font-bold text-xl text-espresso">What it covers</h2></div>
                   <ul className="space-y-3">{detail.whatsCovered.map((c) => (<li key={c} className="flex items-start gap-2.5 text-cocoa text-[0.95rem] leading-relaxed"><CheckCircle2 className="h-5 w-5 text-sage flex-shrink-0 mt-0.5" /><span>{c}</span></li>))}</ul>
                 </div>
@@ -125,7 +125,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </div>
               </FadeIn>
               <FadeIn delay={0.16}>
-                <div className="rounded-3xl bg-white border border-adobe shadow-card p-7 h-full">
+                <div className="rounded-3xl bg-sand border border-adobe shadow-card p-7 h-full">
                   <div className="flex items-center gap-2.5 mb-5"><span className="inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gold/15 text-gold-dark"><Target className="h-5 w-5" strokeWidth={2.2} /></span><h2 className="font-heading font-bold text-xl text-espresso">Why CCA</h2></div>
                   <ul className="space-y-3">{detail.whyCca.map((c) => (<li key={c} className="flex items-start gap-2.5 text-cocoa text-[0.95rem] leading-relaxed"><CheckCircle2 className="h-5 w-5 text-clay flex-shrink-0 mt-0.5" /><span>{c}</span></li>))}</ul>
                 </div>
@@ -143,7 +143,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               {related.map((r) => {
                 const RIcon = ICONS[r.icon as keyof typeof ICONS] ?? ShieldCheck;
                 return (
-                  <Link key={r.slug} href={`/services/${r.slug}`} className="group p-6 rounded-3xl bg-white border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+                  <Link key={r.slug} href={`/services/${r.slug}`} className="group p-6 rounded-3xl bg-sand border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
                     <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-clay/10 text-clay group-hover:bg-clay group-hover:text-cream transition-colors mb-3"><RIcon className="h-6 w-6" strokeWidth={2.2} /></div>
                     <p className="font-heading font-bold text-espresso">{r.title}</p>
                     <span className="mt-2 inline-flex items-center gap-1 text-sm font-heading font-bold text-clay group-hover:gap-2 transition-all">View <ArrowRight className="h-4 w-4" /></span>

@@ -56,7 +56,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="bg-white border-y border-adobe">
+        <section className="bg-sand border-y border-adobe">
           <div className="container-wide py-6">
             <FadeIn>
               <ul className="flex flex-wrap justify-center gap-x-8 gap-y-3">
@@ -78,7 +78,7 @@ export default function AboutPage() {
             <div className="space-y-6">
               {COPY.about.timeline.map((t, i) => (
                 <FadeIn key={t.title} delay={i * 0.08}>
-                  <div className="flex flex-col md:flex-row gap-4 md:gap-8 p-6 rounded-3xl bg-white border border-adobe shadow-card">
+                  <div className="flex flex-col md:flex-row gap-4 md:gap-8 p-6 rounded-3xl bg-sand border border-adobe shadow-card">
                     <div className="md:w-40 flex-shrink-0"><span className="inline-flex px-4 py-2 rounded-full bg-clay-gradient text-cream font-heading font-extrabold">{t.year}</span></div>
                     <div>
                       <h3 className="font-heading font-bold text-xl text-espresso">{t.title}</h3>
@@ -104,7 +104,7 @@ export default function AboutPage() {
                 const Icon = VALUE_ICONS[v.icon] ?? ShieldCheck;
                 return (
                   <FadeIn key={v.title} delay={i * 0.06}>
-                    <div className="h-full rounded-3xl bg-white border border-adobe p-7 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all">
+                    <div className="h-full rounded-3xl bg-sand border border-adobe p-7 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all">
                       <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-sage/10 text-sage mb-4"><Icon className="h-6 w-6" strokeWidth={2.2} /></div>
                       <h3 className="font-heading font-bold text-lg text-espresso">{v.title}</h3>
                       <p className="mt-2 text-sm text-mocha leading-relaxed">{v.desc}</p>

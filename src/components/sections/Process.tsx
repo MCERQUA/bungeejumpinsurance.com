@@ -19,7 +19,7 @@ export function Process() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 lg:gap-6">
           {PROCESS.map((step, i) => (
             <FadeIn key={step.step} delay={i * 0.08}>
-              <div className="relative h-full rounded-3xl bg-white border border-adobe p-7 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
+              <div className="relative h-full rounded-3xl bg-sand border border-adobe p-7 shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
                 <span className="absolute -top-4 left-7 inline-flex h-10 px-3 items-center justify-center rounded-full bg-clay-gradient text-cream font-heading font-extrabold text-sm shadow-warm">Step {step.step}</span>
                 <div className="mt-5 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-gold/15 text-gold-dark mb-4"><step.icon className="h-6 w-6" strokeWidth={2.2} /></div>
                 <h3 className="font-heading font-bold text-lg text-espresso leading-tight">{step.title}</h3>

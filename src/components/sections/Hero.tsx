@@ -53,7 +53,7 @@ export function Hero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-espresso/30 via-transparent to-transparent" />
               </div>
 
-              <motion.div initial={prefersReduced ? {} : { opacity: 0, y: 20 }} animate={prefersReduced ? {} : { opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="absolute -bottom-6 -left-4 md:-left-8 bg-white rounded-2xl shadow-warm-lg border border-adobe p-5 max-w-[15rem]">
+              <motion.div initial={prefersReduced ? {} : { opacity: 0, y: 20 }} animate={prefersReduced ? {} : { opacity: 1, y: 0 }} transition={{ delay: 0.6, duration: 0.6 }} className="absolute -bottom-6 -left-4 md:-left-8 bg-sand rounded-2xl shadow-warm-lg border border-adobe p-5 max-w-[15rem]">
                 <div className="flex items-start gap-3">
                   <div className="flex-shrink-0 h-11 w-11 rounded-xl bg-clay-gradient flex items-center justify-center">
                     <ShieldCheck className="h-6 w-6 text-cream" />

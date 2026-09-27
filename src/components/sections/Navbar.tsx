@@ -59,7 +59,7 @@ export function Navbar() {
           <Link href="/quote" className="btn-primary !py-2.5 !px-6 text-sm">Get a Quote</Link>
         </div>
 
-        <button className="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl bg-white border border-adobe shadow-card text-espresso" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+        <button className="lg:hidden inline-flex items-center justify-center h-11 w-11 rounded-xl bg-sand border border-adobe shadow-card text-espresso" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen((v) => !v)}>
           {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </nav>

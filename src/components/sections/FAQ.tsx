@@ -38,7 +38,7 @@ export function FAQ({
             const isOpen = open === i;
             return (
               <FadeIn key={item.q} delay={(i % 8) * 0.03}>
-                <div className={cn("rounded-2xl border transition-all duration-300 overflow-hidden", isOpen ? "bg-white border-clay/30 shadow-card" : "bg-white/70 border-adobe hover:bg-white")}>
+                <div className={cn("rounded-2xl border transition-all duration-300 overflow-hidden", isOpen ? "bg-sand border-clay/30 shadow-card" : "bg-sand/70 border-adobe hover:bg-sand")}>
                   <button onClick={() => setOpen(isOpen ? null : i)} aria-expanded={isOpen} className="w-full flex items-center justify-between gap-4 text-left px-6 py-5">
                     <span className="font-heading font-bold text-espresso text-base md:text-lg leading-snug">{item.q}</span>
                     <span className={cn("flex-shrink-0 inline-flex h-8 w-8 items-center justify-center rounded-full transition-colors", isOpen ? "bg-clay text-cream" : "bg-sand text-clay")}>{isOpen ? <Minus className="h-4 w-4" /> : <Plus className="h-4 w-4" />}</span>

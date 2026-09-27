@@ -107,7 +107,7 @@ export default async function BlogPostPage({ params }: Props) {
               <div className="grid md:grid-cols-3 gap-6">
                 {more.map((p) => (
                   <Link key={p.slug} href={`/blog/${p.slug}`} className="group block h-full">
-                    <article className="rounded-3xl bg-white border border-adobe shadow-card hover:shadow-card-hover transition-all h-full p-6 flex flex-col">
+                    <article className="rounded-3xl bg-sand border border-adobe shadow-card hover:shadow-card-hover transition-all h-full p-6 flex flex-col">
                       <span className="px-2.5 py-0.5 bg-clay/10 text-clay rounded-md text-xs font-heading font-semibold w-fit mb-3">{p.category}</span>
                       <h3 className="font-heading font-bold text-espresso group-hover:text-clay transition-colors line-clamp-2">{p.title}</h3>
                       <p className="mt-2 text-sm text-mocha line-clamp-2 flex-grow">{p.description}</p>

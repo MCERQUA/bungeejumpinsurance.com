@@ -106,7 +106,7 @@ export default async function LocationPage({ params }: Props) {
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {SERVICES.slice(0, 4).map((s, i) => (
                 <FadeIn key={s.slug} delay={i * 0.06}>
-                  <Link href={`/services/${s.slug}`} className="group block h-full p-6 rounded-3xl bg-white border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all">
+                  <Link href={`/services/${s.slug}`} className="group block h-full p-6 rounded-3xl bg-sand border border-adobe shadow-card hover:shadow-card-hover hover:-translate-y-1 transition-all">
                     <ShieldCheck className="h-7 w-7 text-clay mb-3" strokeWidth={2.2} />
                     <p className="font-heading font-bold text-espresso">{s.title}</p>
                     <span className="mt-2 inline-flex items-center gap-1 text-sm font-heading font-bold text-clay group-hover:gap-2 transition-all">Learn more <ArrowRight className="h-4 w-4" /></span>

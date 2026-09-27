@@ -56,7 +56,7 @@ export default function BlogPage() {
                 {featured && (
                   <FadeIn className="mb-12">
                     <Link href={`/blog/${featured.slug}`} className="group block">
-                      <article className="grid md:grid-cols-2 gap-0 rounded-[2rem] overflow-hidden bg-white border border-adobe shadow-card hover:shadow-card-hover transition-all">
+                      <article className="grid md:grid-cols-2 gap-0 rounded-[2rem] overflow-hidden bg-sand border border-adobe shadow-card hover:shadow-card-hover transition-all">
                         <div className="relative overflow-hidden">
                           <img src={featured.image || "/images/hero.jpg"} alt={featured.title} className="w-full h-64 md:h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                           <div className="absolute top-4 left-4"><span className="pill-gold !bg-gold !text-cream !border-gold-dark">Featured</span></div>
@@ -80,7 +80,7 @@ export default function BlogPage() {
                   {rest.map((post, i) => (
                     <FadeIn key={post.slug} delay={i * 0.08}>
                       <Link href={`/blog/${post.slug}`} className="group block h-full">
-                        <article className="rounded-3xl overflow-hidden bg-white border border-adobe shadow-card hover:shadow-card-hover transition-all h-full flex flex-col">
+                        <article className="rounded-3xl overflow-hidden bg-sand border border-adobe shadow-card hover:shadow-card-hover transition-all h-full flex flex-col">
                           <div className="h-2 bg-clay-gradient" />
                           <div className="p-6 flex-grow flex flex-col">
                             <div className="flex items-center gap-3 text-xs text-mocha mb-3">
