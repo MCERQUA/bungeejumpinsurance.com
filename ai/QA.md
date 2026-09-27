@@ -8,7 +8,7 @@
 
 ## Design System
 - Background: Jet black #000000 (dark theme)
-- Primary: Electric blue #0066ff
+- Primary: Blaze orange #FF7A1F (was electric blue until the 2026-09-27 palette pass)
 - Accent: Neon green #39ff14
 - Heading font: Barlow Condensed (bold, condensed, uppercase)
 - Body font: Barlow
