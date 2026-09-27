@@ -45,11 +45,6 @@ export const COPY = {
     sidebarBody: "Bungee jump venues, mobile crane operations, and adventure parks — we've placed the programs that standard markets couldn't write.",
   },
 
-  testimonials: {
-    eyebrow: "From bungee jump operators",
-    h2Lead: "Operators who found",
-    h2Highlight: "coverage that actually holds",
-  },
 
   footer: {
     ctaTitle: "Get your bungee jump operator quote",
@@ -146,7 +141,7 @@ export const COPY = {
     lead: "Tell us about your operation and equipment. We'll shop A-rated specialty markets and come back with real quotes in about 15 minutes — no obligation.",
     businessPlaceholder: "Extreme Air Bungee LLC",
     emailPlaceholder: "ops@extremeairbungee.com",
-    phonePlaceholder: "(480) 555-0100",
+    phonePlaceholder: "Best number to reach you",
     messagePlaceholder:
       "Jump system specs, height, annual participant count, states of operation, coverage lines needed, current insurer, loss history, or anything else that helps us quote accurately…",
     errorMessage: "Something went wrong. Please call us at 844-967-5247 or try again.",

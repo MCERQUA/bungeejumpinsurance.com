@@ -223,24 +223,3 @@ export const STATS = [
   { value: 15, suffix: " min", label: "Average quote turnaround", prefix: "" },
   { value: 50, suffix: "", label: "States licensed & writing", prefix: "" },
 ] as const;
-
-export const TESTIMONIALS = [
-  {
-    quote: "We operate a mobile bungee crane system at fairs and festivals across five states. The participant accident coverage and umbrella limits we got through Contractors Choice are exactly what major venues require. They understood our mobile operation — most agents don't even know where to start with bungee jump risk.",
-    name: "Travis M.",
-    role: "Owner, Extreme Air Bungee",
-    location: "Texas",
-  },
-  {
-    quote: "After a harness malfunction injured a participant, the GL claim could have ended our business. Our policy through CCA responded exactly as written — covered the medical costs and legal defense. The equipment breakdown rider covered our crane repairs while we were shut down for inspection.",
-    name: "Sandra K.",
-    role: "Operations Director, AdrenalineJump LLC",
-    location: "Florida",
-  },
-  {
-    quote: "We have a permanent bungee tower at our adventure park. Getting the right mix of GL, accident insurance, and property coverage was a puzzle until CCA put together a package that satisfied both our land-owner and our lender. 15-minute quote and they had the binder the same week.",
-    name: "Derek R.",
-    role: "General Manager, Summit Adventure Park",
-    location: "Colorado",
-  },
-] as const;
