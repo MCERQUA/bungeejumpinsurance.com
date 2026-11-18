@@ -1,17 +1,27 @@
-import { Barlow_Condensed, Barlow } from "next/font/google";
+import localFont from "next/font/local";
 
 // Heading font — Barlow Condensed (bold, condensed, kinetic energy)
-export const headingFont = Barlow_Condensed({
-  subsets: ["latin"],
+export const headingFont = localFont({
+  src: [
+    { path: "./fonts/BarlowCondensed-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/BarlowCondensed-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/BarlowCondensed-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/BarlowCondensed-700.woff2", weight: "700", style: "normal" },
+    { path: "./fonts/BarlowCondensed-800.woff2", weight: "800", style: "normal" },
+    { path: "./fonts/BarlowCondensed-900.woff2", weight: "900", style: "normal" },
+  ],
   variable: "--font-heading",
-  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
 // Body font — Barlow (clean companion to Barlow Condensed)
-export const bodyFont = Barlow({
-  subsets: ["latin"],
+export const bodyFont = localFont({
+  src: [
+    { path: "./fonts/Barlow-400.woff2", weight: "400", style: "normal" },
+    { path: "./fonts/Barlow-500.woff2", weight: "500", style: "normal" },
+    { path: "./fonts/Barlow-600.woff2", weight: "600", style: "normal" },
+    { path: "./fonts/Barlow-700.woff2", weight: "700", style: "normal" },
+  ],
   variable: "--font-body",
-  weight: ["400", "500", "600", "700"],
   display: "swap",
 });
